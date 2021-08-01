@@ -15,32 +15,30 @@
 
   <!-- SEO -->
   <!-- Primary Meta Tags -->
-  <meta name="title" content="Nguyễn Công Dũng - Resume" />
-  <meta name="description" content="Website is resume of Nguyễn Công Dũng - DungGramer" />
+  <meta name="title" content="Lê Hồng Ngọc - Resume" />
+  <meta name="description" content="Website is resume of Lê Hồng Ngọc" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://github.com/DungGramer" />
-  <meta property="article:author" content="DungGramer" />
-  <meta property="og:title" content="Nguyễn Công Dũng - Resume" />
-  <meta property="og:description" content="Website is resume of Nguyễn Công Dũng - DungGramer" />
+  <meta property="article:author" content="lhngoc" />
+  <meta property="og:title" content="Lê Hồng Ngọc - Resume" />
+  <meta property="og:description" content="Website is resume of Lê Hồng Ngọc" />
   <meta property="og:image"
-    content="https://raw.githubusercontent.com/DungGramer/DungGramer/master/image/resume-cover.png" />
+    content="image/resume-cover.png" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta name="twitter:creator" content="@DungGramer" />
-  <meta property="twitter:url" content="https://github.com/DungGramer" />
-  <meta property="twitter:title" content="Nguyễn Công Dũng - Resume" />
-  <meta property="twitter:description" content="Website is resume of Nguyễn Công Dũng - DungGramer" />
+  <meta property="twitter:title" content="Lê Hồng Ngọc - Resume" />
+  <meta property="twitter:description" content="Website is resume of Lê Hồng Ngọc" />
   <meta property="twitter:image"
-    content="https://raw.githubusercontent.com/DungGramer/DungGramer/master/image/resume-cover.png" />
+    content="image/resume-cover.png" />
 
   <!-- Custom -->
-  <meta name="theme-color" content="#454545" />
-  <link rel="me" href="https://www.facebook.com/dung.dev.gramer/" type="text/html" />
-  <link rel="me" href="mailto:dung.dev.gramer.com" />
-  <link rel="me" href="sms:+84334565999" />
+  <meta name="theme-color" content="#4387f4" />
+  <link rel="me" href="https://www.facebook.com/lhngoc.158/" type="text/html" />
+  <link rel="me" href="mailto:lhngoc.158@gmail.com" />
+  <link rel="me" href="sms:+84976039975" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="renderer" content="webkit|ie-comp|ie-stand" />
 </head>
@@ -193,17 +191,12 @@
   <div class="download">
     <ul class="download__wrapper">
       <li><a class="pdf"
-          onclick="generatePDF()">Download (.pdf)</a>
+          href="LeHongNgoc-resume.pdf">Download (.pdf)</a>
       </li>
       <li><a class="print">Print</a></li>
     </ul>
   </div>
   <!-- END Download Button -->
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"
-    integrity="sha512-w3u9q/DeneCSwUDjhiMNibTRh/1i/gScBVp2imNVAMCt6cUHIw6xzhzcPFIaL3Q1EbI2l+nu17q2aLJJLo4ZYg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
 </body>
 <script>
   let btnDownload = document.querySelector(".download");
@@ -231,19 +224,6 @@
     }
     prevScrollpos = currentScrollPos;
   };
-
-  //generate PDF
-  function generatePDF() {
-    var pdf = new jsPDF();
-    pdf.addHTML(document.getElementsByClassName("A4"), 0, 0, 0, "default", "https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js");
-    pdf.save("a4-page.pdf");
-  }
-  // function generatePDF() {
-  //   const element = document.getElementsByClassName('A4');
-  //   html2pdf()
-  //     .from(element)
-  //     .save();
-  // }
 </script>
 
 </html>
