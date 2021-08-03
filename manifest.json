@@ -4,9 +4,10 @@
 	  "description": "This is resume of Lê Hồng Ngọc",
     "icons": [
         {
-            "src": "/image/favicon/android-chrome-192x192.png",
-            "sizes": "192x192",
-            "type": "image/png"
+          "src": "/image/favicon/android-chrome-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "purpose": "any"
         },
         {
             "src": "/image/favicon/android-chrome-256x256.png",
@@ -17,6 +18,12 @@
           "src": "/image/favicon/android-chrome-512x512.png",
           "sizes": "512x512",
           "type": "image/png"
+        },
+        {
+          "src": "/image/favicon/maskable_icon-196x196.png",
+          "sizes": "196x196",
+          "type": "image/png",
+          "purpose": "maskable"
         }
     ],
     "theme_color": "#ffffff",
