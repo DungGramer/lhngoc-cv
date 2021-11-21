@@ -45,7 +45,7 @@ ul li + li {
 }
 
 h4 {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 *,
@@ -74,7 +74,7 @@ a:focus {
 
 body {
   background: #eee;
-  font-size: 1.6rem;
+  font-size: 1.55rem;
 }
 
 /*------------------------------------*
@@ -144,9 +144,9 @@ body {
 }
 
 .flex--1x3 > * {
-  -webkit-box-flex: 0.33;
-  -ms-flex: 0.33;
-  flex: 0.33;
+  -webkit-box-flex: 0.3;
+  -ms-flex: 0.3;
+  flex: 0.3;
 }
 
 @media not print {
@@ -179,15 +179,15 @@ body {
    */
 
 .header__container {
-  -webkit-box-flex: 0.34;
-  -ms-flex: 0.34;
-  flex: 0.34;
+  -webkit-box-flex: 0.3;
+  -ms-flex: 0.3;
+  flex: 0.3;
 }
 
 .content__container {
-  -webkit-box-flex: 0.66;
-  -ms-flex: 0.66;
-  flex: 0.66;
+  -webkit-box-flex: 0.7;
+  -ms-flex: 0.7;
+  flex: 0.7;
   font-style: normal;
   grid-gap: 1.5rem;
   gap: 1.5rem;
@@ -201,16 +201,16 @@ body {
   }
 }
 
-.content__container:not(.flex--1x3) > .info + .info {
+/* .content__container:not(.flex--1x3) > .info + .info {
   margin-top: 2rem;
-}
+} */
 
 .content__container > a {
   padding-bottom: 8px;
 }
 
 .wrapper + .wrapper {
-  margin-top: 30px;
+  margin-top: 28px;
 }
 
 /*------------------------------------*
@@ -388,7 +388,8 @@ body {
 }
 
 @media print {
-  .download__wrapper {
+  .download__wrapper,
+  .download {
     display: none;
   }
 }
@@ -397,25 +398,30 @@ body {
   # Avatar
 *------------------------------------*/
 
-
-.avatar__section aside{
-    display: flex;
-    flex-direction: column;
+.avatar__section aside {
+  display: flex;
+  flex-direction: column;
 }
 
 .avatar__section #avatar {
-    /* position: absolute;
+  /* position: absolute;
     right: 55px;
     top: 48px; */
-    --img-size: 170px;
-    width: var(--img-size);
-    max-width: var(--img-size);
-    margin-right: auto;
+  --img-size: 170px;
+  width: var(--img-size);
+  max-width: var(--img-size);
+  margin-right: auto;
 }
-
 
 .avatar__section address {
-    margin-top: auto;
+  margin-top: auto;
 }
 
+.skill__section {
+  grid-gap: 2.2rem;
+  gap: 2.2rem;
+}
 
+.skill__section > .info {
+  flex-basis: 180px;
+}
