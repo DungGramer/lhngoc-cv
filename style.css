@@ -94,6 +94,8 @@ body {
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   -o-border-radius: 7px;
+
+  position: relative;
 }
 
 @media print {
@@ -390,3 +392,30 @@ body {
     display: none;
   }
 }
+
+/*------------------------------------*
+  # Avatar
+*------------------------------------*/
+
+
+.avatar__section aside{
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar__section #avatar {
+    /* position: absolute;
+    right: 55px;
+    top: 48px; */
+    --img-size: 170px;
+    width: var(--img-size);
+    max-width: var(--img-size);
+    margin-right: auto;
+}
+
+
+.avatar__section address {
+    margin-top: auto;
+}
+
+
